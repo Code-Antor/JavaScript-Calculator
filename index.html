@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Modern Calculator</h1>
+        <div class="content">
+            <form action="">
+                <div class="monitor">
+                    <input type="text" name="display" disabled class="shower">
+                </div>
+                <div class="buttons">
+                    <div class="rows">
+                        <input type="button" value="AC" onclick="shower.value = ''">
+                        <input type="button" value="DE" onclick="shower.value = shower.value.toString().slice(0,-1)">
+                        <input type="button" value="." onclick="shower.value += '.'">
+                        <input type="button" value="/" onclick="shower.value += '/'">
+                    </div>
+                    <div class="rows">
+                        <input type="button" value="7" onclick="shower.value += '7'">
+                        <input type="button" value="8" onclick="shower.value += '8'">
+                        <input type="button" value="9" onclick="shower.value += '9'">
+                        <input type="button" value="*" onclick="shower.value += '*'">
+                    </div>
+                    <div class="rows">
+                        <input type="button" value="4" onclick="shower.value += '4'">
+                        <input type="button" value="5" onclick="shower.value += '5'">
+                        <input type="button" value="6" onclick="shower.value += '6'">
+                        <input type="button" value="-" onclick="shower.value += '-'"> 
+                    </div>
+                    <div class="rows">
+                        <input type="button" value="1" onclick="shower.value += '1'">
+                        <input type="button" value="2" onclick="shower.value += '2'">
+                        <input type="button" value="3" onclick="shower.value += '3'">
+                        <input type="button" value="+" onclick="shower.value += '+'">
+                    </div>
+                    <div class="rows-last">
+                        <input type="button" value="00" onclick="shower.value += '00'">
+                        <input type="button" value="0" onclick="shower.value += '0'">
+                        <input type="button" value="=" class="equal" onclick="shower.value = eval(shower.value)">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
